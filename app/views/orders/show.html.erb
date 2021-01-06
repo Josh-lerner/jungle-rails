@@ -1,12 +1,20 @@
 <section class="orders-show">
 
   <header class="page-header">
-    <h1>Order #<%= @order.id %></h1>
-  </header>
+  <h1>Thank you for your order <%= @order.email %>!</h1>
+  <h3>(Order #<%= @order.id %>)</h3>
+    </header>
 
   <div class="order-summary jumbotron">
-    <h4>Thank you for your order!</h4>
+  <div class="line-items">
+  <% line_items = LineItem.where(order_id: @order.id) %>
+  <% line_items.each do |line_item| %>
+    <%= render 'item', product_id: line_item.product_id, quantity: line_item.quantity, line_total: line_item.total_price %>
+  <% end %>
+</div>
   </div>
+
+  <h2>Your order total: <%= humanized_money_with_symbol @order.total %><h2>
 
   <%= link_to "Continue Shopping", root_path, class: 'btn btn-lg btn-primary' %>
 
