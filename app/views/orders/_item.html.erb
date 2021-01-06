@@ -1,0 +1,15 @@
+<% if product = Product.find_by(id: product_id) %>
+  <div class="item">
+    <header>
+      <%= image_tag product.image.thumb, alt: product.name %>
+      <h4><%= product.name %></h4>
+    </header>
+    <p class="description">
+      <%= product.description %>
+    </p>
+    <footer>
+      <h5>Quantity: <%= quantity %></h5>
+      <h5>Price: <%= humanized_money_with_symbol line_total %></h5>
+    </footer>
+  </div>
+<% end %>
