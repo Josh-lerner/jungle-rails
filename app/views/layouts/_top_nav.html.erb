@@ -49,5 +49,12 @@
         </li>
       </ul>
     </div>
+    <div class="user">
+    <% if current_user %>
+    Signed in as <%= current_user.name %> &nbsp;|&nbsp; <%= link_to "Logout", '/logout' %>
+    <% else %>
+      <%= link_to 'Login', '/login' %> &nbsp;|&nbsp; <%= link_to 'Signup', '/signup' %>
+    <% end %>
+  </div>
   </div>
 </nav>
