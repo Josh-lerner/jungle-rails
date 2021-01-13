@@ -26,3 +26,23 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 * Rails 4.2 [Rails Guide](http://guides.rubyonrails.org/v4.2/)
 * PostgreSQL 9.x
 * Stripe
+* Testing: Capybara, Poltergeist, Rspec-Rails
+
+
+
+## Screenshots
+
+### Homepage
+![Homepage](https://github.com/Josh-lerner/jungle-rails/blob/master/docs/Homepage.png?raw=true)
+
+### Product Description
+![Product](https://github.com/Josh-lerner/jungle-rails/blob/master/docs/product.png?raw=true)
+
+### Cart
+![Cart](https://github.com/Josh-lerner/jungle-rails/blob/master/docs/my%20cart.png?raw=true)
+
+### Admin Categories
+![Admin_categories](https://github.com/Josh-lerner/jungle-rails/blob/master/docs/admin%20categories.png?raw=true)
+
+### Admin Products
+![Admin_products](https://github.com/Josh-lerner/jungle-rails/blob/master/docs/admin%20products.png?raw=true)
